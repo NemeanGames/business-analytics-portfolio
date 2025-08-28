@@ -1,0 +1,7 @@
+{
+  "project_title": "Car Wash Market Intelligence & Growth Analytics",
+  "project_description": "A data-driven portfolio analyzing Quick Quack and competitors with insights on growth, membership ROI, and customer sentiment.",
+  "skills": ["R", "Shiny", "ggplot2", "tidytext", "Market Research", "Business Strategy"],
+  "datasets": ["Competitor location data", "Google & Yelp reviews", "Membership pricing"],
+  "industry": "Car Wash / Automotive Services"
+}
