@@ -1,0 +1,34 @@
+---
+title: "Car Wash Market Intelligence & Growth Analytics"
+author: "Your Name"
+output: html_document
+---
+
+## Introduction
+
+This report provides an overview of the car wash market and a sample growth analysis using placeholder data.
+
+## Data Summary
+
+```{r}
+source("analysis.R")
+print(head(growth_data))
+```
+
+## Growth Chart
+
+```{r}
+# Plot growth trends using the analysis script
+print(
+  ggplot(growth_data_long, aes(x = year, y = Sites, color = Company)) +
+    geom_line() +
+    geom_point() +
+    ggtitle("Car Wash Sites Growth (Sample Data)") +
+    xlab("Year") +
+    ylab("Number of Sites")
+)
+```
+
+## Conclusion
+
+This placeholder report demonstrates the structure for a full market intelligence report.
