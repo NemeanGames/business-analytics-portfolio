@@ -1,0 +1,24 @@
+# Ignore R session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore R project files
+*.Rproj
+
+# Ignore OS files
+.DS_Store
+
+# Ignore local virtual environments
+env/
+venv/
+
+# Ignore node modules
+node_modules/
