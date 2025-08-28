@@ -1,12 +1,13 @@
 import requests
 import base64
 import json
+import os
 
 # Configuration
 REPO = "NemeanGames/business-analytics-portfolio"  # Update with your GitHub repo
 BRANCH = "main"
 FILE_PATH = "README.md"
-TOKEN = "ghp_your_token_here"  # Replace with your GitHub personal access token or use environment variable
+TOKEN = os.environ.get("GITHUB_TOKEN")
 
 # Load metadata
 with open("metadata.json") as f:
