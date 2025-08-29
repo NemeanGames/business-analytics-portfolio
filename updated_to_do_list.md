@@ -17,16 +17,12 @@ This list reflects the current status of the car‑wash market intelligence proj
 
 * **Interactive dashboard:** Build a Shiny or Plotly dashboard to allow recruiters to explore the dataset and forecasts interactively. This remains a stretch goal and is not required for the upcoming interview.
 
-## 📦 Deployment & Repository Tasks
-
-* **Enable GitHub Pages:** Turn on Pages in the repository settings (`Settings → Pages → Source = GitHub Actions`) so the site will deploy on pushes to `main`.
-* **Commit and push updates:** Publish the updated report (`report.Rmd`), README and case‑study narratives to `main` to trigger the Pages workflow.
+##* ✅ **Enable GitHub Pages:** Enabled Pages in repository settings (Source = GitHub Actions).
+* ✅ **Commit and push updates:** Updated report, README, case-study narratives and dataset sections committed to `main`.
 * **Verify the live site:** After deployment, test the site at `https://nemeangames.github.io/business-analytics-portfolio/` to ensure charts render correctly and navigation works.
-* **Project‑specific README:** Add a `README.md` under `projects/carwash‑market‑intelligence/` summarising the case study, datasets and scripts so visitors can understand the scope and reproduce the analysis.
-* **Repository hygiene:** Add a `.gitignore` to exclude unnecessary files, include an open‑source licence, and reorganise the folder structure (e.g. `data/`, `scripts/`, `projects/`) as recommended.
-
+* ✅ **Project-specific README:** Added a `README.md` under `projects/carwash-market-intelligence/` summarising the case study, datasets and scripts.
+* ✅ **Repository hygiene:** Added a `.gitignore`, organised the folder structure, and included an MIT licence.
 ## 📈 Business Impact & Presentation
-
 * **Business implications documented:** The report now ties each analysis to strategic decisions (e.g. expansion planning, pricing strategy, service improvements, competitive positioning).
 * **Visual polish and narrative refinement:** Finalise the wording and formatting in the report and README to ensure clarity, professionalism and consistent styling. Consider using a corporate colour palette when customising plots.
 * **Executive summary:** Craft a concise summary of top findings and actionable recommendations at the start of the README and the report for busy hiring managers.
