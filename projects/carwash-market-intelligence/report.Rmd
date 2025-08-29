@@ -50,7 +50,7 @@ Online reviews reveal that speed, value and convenience are the main drivers of 
 
 Warehouse retailers like Costco and Sam’s Club have begun offering members low‑cost express car washes, typically $7–8 per wash. These washes leverage the retailers’ existing traffic and membership base, providing a cheap, convenient alternative to dedicated express chains. While quality may vary, and services are often limited to exterior washes, the pricing can attract price‑sensitive consumers who might otherwise join an unlimited wash club. Traditional car wash chains should monitor this trend and emphasize superior service, technology and convenience to retain customers.
 
-This placeholder report demonstrates the structure for a full market intelligence report.
+ 
 
 ## Competitor Dataset
 
@@ -58,5 +58,9 @@ This analysis uses a dataset of major express tunnel car wash competitors compil
 
 ```{r}
 competitors <- read.csv("data/competitor_dataset.csv")
-print(competitors)`
+print(competitors)
+
+
+
+
 
