@@ -57,7 +57,7 @@ Warehouse retailers like Costco and Sam’s Club have begun offering members low
 This analysis uses a dataset of major express tunnel car wash competitors compiled from public sources. The dataset includes each company's number of locations in 2025 and standardised membership and single-wash pricing.
 
 ```{r}
-competitors <- read.csv("data/competitor_dataset.csv")
+competitors <- read.csv("../../data/competitor_dataset.csv")
 print(competitors)
 
 
