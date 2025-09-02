@@ -6,7 +6,9 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+        permissions:
+        contents: write
+      runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.3.1
     env:
@@ -39,7 +41,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: public
           user_name: GitHub Actions
