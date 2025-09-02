@@ -2,12 +2,11 @@ name: Build and Deploy Portfolio Pages
 
 on:
   push:
-    branches: [ "main" ]  # Rebuild site on pushes to main branch
+    branches: ["main"]  # Rebuild site on pushes to main branch
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-  
     container:
       image: rocker/verse:4.3.1
     env:
@@ -26,6 +25,7 @@ jobs:
           key: ${{ runner.os }}-R-4.3.1-${{ hashFiles('**/projects/carwash-market-intelligence/analysis.R', '**/projects/carwash-market-intelligence/report.Rmd') }}
           restore-keys: ${{ runner.os }}-R-4.3.1-
 
+
       - name: Install R package dependencies
         run: |
           Rscript -e "install.packages(c('rmarkdown', 'ggplot2', 'dplyr', 'tidyr', 'forecast', 'tidytext'), repos='https://cloud.r-project.org')"
@@ -39,7 +39,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-   with:
           personal_token: ${{ secrets.GH_TOKEN }}
           publish_branch: gh-pages
           publish_dir: public
